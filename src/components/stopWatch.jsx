@@ -14,7 +14,7 @@ function Stopwatch() {
 
         timerRef.current = setInterval(() => {
             setSecondsTimer((prev) => {
-                if (prev === 10) {
+                if (prev === 59) {
                     setMinutesTimer((m) => {
                         if (m === 59) {
                             setHoursTimer((h) => h + 1);
